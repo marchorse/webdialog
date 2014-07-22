@@ -1,0 +1,37 @@
+$def with (context, content) 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+    <head> 
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" /> 
+        <title>webdialog simple demo</title> 
+        <meta name="keywords" content="" /> 
+        <meta name="description" content="" /> 
+        <style type="text/css" media="screen"> 
+                @import url( "/static/css/reset.css" ); 
+                @import url( "/static/css/dialog.css" );
+                @import url( "/static/css/display.css" );
+        </style> 
+        <script src="/static/js/jquery.min.js" type="text/javascript"></script>	  	 
+        <script src="/static/js/dialog.js" type="text/javascript"></script>
+        <script src="/static/js/recorder.js" type="text/javascript"></script>
+        <script src="/static/js/google-tts.js" type="text/javascript"></script>
+        <script src="/static/js/default_views.js" type="text/javascript"></script>
+        <script src="/static/js/views.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            window.csrf_token = "$(context["session"].csrf_token)";
+            window.initial_prompt = "$(context["session"].dialog_state.initial_prompt)";
+        </script>
+    </head> 
+    <body>
+        <div id="control">
+            <button id="start_button">Start</button>
+            <img id="mic_icon" src="/static/images/mic_icon.png" width="32px" height="32px" />
+            <p id="systext"></p>
+            <p id="result_onebest"></p>
+            <p id="error_text"></p>
+        </div>
+        <div id="display">
+            $:content
+        </div>
+    </body> 
+</html>

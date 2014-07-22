@@ -1,0 +1,13 @@
+*.png
+*.min.js
+*.min.map
+*.pyc
+sessions
+ssl
+.DS_*
+logs
+config.py
+config.cfg
+templates/display.html
+static/css/display.css
+static/js/views.js

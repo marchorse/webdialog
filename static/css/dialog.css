@@ -1,0 +1,115 @@
+
+body {
+    margin:1em;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    color:#11191d;
+    background:#f9f8f5;
+}
+
+div.resultView {
+    width:400px;
+    border:1px solid #c9867f;
+    margin:1em;
+    padding:10px;
+}
+p.topHyp {
+    font-weight:bold;
+    width:300px;
+    float:left;
+}
+
+p.conf {
+    width:80px;
+    float:left;
+    text-align:right;
+}
+ul.hypList {
+    list-style-position:inside;
+    clear:both;
+    list-style-type:square;
+    color:#555;
+    line-height:1.3em;
+    font-size:90%;
+}
+
+
+#getchrome {
+    display:none;
+}
+
+#mic_icon {
+    visibility:hidden;
+    position:absolute;
+    bottom:3px;
+    left:6px;
+}
+#mic_icon.listening {
+     visibility:visible;
+}
+#control {
+    display:block;
+    position:relative;
+    margin:10px;
+    border:3px solid #5479cf;
+    padding:4px;
+    min-height:70px;
+    max-width:720px;
+    -webkit-border-radius: 4px;
+    padding-left:90px;
+    background-color: rgb(43, 60, 83);
+    }
+#control button#start_button {
+    position:absolute;
+    top:4px;
+    left:4px;
+}
+#control p#systext {
+    clear:both;
+    margin:5px;
+    font-size:120%;
+    color:#e7f1f7;
+    line-height:150%;
+}
+#control p#systext.speaking {
+   -webkit-stroke-width: 5.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   text-shadow: 1px 0px 15px #feced7;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+}
+#control button {
+     background-color:rgb(255, 251, 251);
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:2px solid #b7b7b7;
+    display:inline-block;
+    color:#46101e;
+    font-size:100%;
+    font-weight:bold;
+    padding:6px 15px;
+    text-decoration:none;
+    text-shadow:1px 1px 2px #fbc9c0;
+}
+#control p#result_onebest {
+    color:white;
+    margin:5px;
+}
+
+#control p#result_onebest .nonfinal {
+    text-decoration:underline;
+    -webkit-stroke-width: 5.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   text-shadow: 1px 0px 15px #feced7;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+}
+#control p#error_text {
+    font-size:90%;
+    color:#feeab9;
+}
+
+.clear {
+    clear:both;
+}
